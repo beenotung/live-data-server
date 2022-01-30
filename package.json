@@ -7,11 +7,23 @@
     "test": "tsc --noEmit",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "generic",
+    "restful",
+    "data",
+    "server",
+    "json",
+    "sqlite3",
+    "cli"
+  ],
+  "author": {
+    "name": "Beeno Tung",
+    "email": "aabbcc1241@yahoo.com.hk",
+    "url": "https://beeno-tung.surge.sh"
+  },
+  "license": "BSD-2-Clause",
   "bin": {
-    "data-server": "./cli.js"
+    "data-server": "cli.js"
   },
   "files": [
     "dist/*.js"
@@ -32,5 +44,13 @@
     "listening-on": "^2.0.2",
     "live-data-sync": "^1.0.3",
     "multer": "^1.4.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/live-data-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beenotung/live-data-server/issues"
+  },
+  "homepage": "https://github.com/beenotung/live-data-server#readme"
 }
