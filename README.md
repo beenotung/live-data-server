@@ -1,4 +1,4 @@
-# data-server
+# live-data-server
 
 Similar to [json-server](https://github.com/typicode/json-server) but backed by sqlite3
 

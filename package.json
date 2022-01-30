@@ -1,5 +1,5 @@
 {
-  "name": "data-server",
+  "name": "live-data-server",
   "version": "1.0.0",
   "description": "Similar to [json-server](https://github.com/typicode/json-server) but backed by sqlite3",
   "main": "index.js",
