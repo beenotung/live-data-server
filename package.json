@@ -1,0 +1,36 @@
+{
+  "name": "data-server",
+  "version": "1.0.0",
+  "description": "Similar to [json-server](https://github.com/typicode/json-server) but backed by sqlite3",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "data-server": "./cli.js"
+  },
+  "files": [
+    "dist/*.js"
+  ],
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^17.0.13",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "better-sqlite3-schema": "^2.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "listening-on": "^2.0.2",
+    "live-data-sync": "^1.0.3",
+    "multer": "^1.4.4"
+  }
+}
