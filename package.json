@@ -1,6 +1,6 @@
 {
   "name": "live-data-server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Similar to [json-server](https://github.com/typicode/json-server) but backed by sqlite3",
   "main": "index.js",
   "scripts": {
