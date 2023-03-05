@@ -52,7 +52,7 @@ routes.post('/:table', (req, res) => {
   res.json(id)
 })
 
-/* update */
+/* update by id */
 routes.patch('/:table/:id', (req, res) => {
   let table = req.params.table as any
   let id = req.params.id as any

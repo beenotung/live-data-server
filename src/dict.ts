@@ -21,7 +21,7 @@ routes.get('/:name', (req, res) => {
   res.json(record)
 })
 
-/* update */
+/* update by name */
 routes.patch('/:name', (req, res) => {
   let name = req.params.name
   dict.update(name, req.body)
