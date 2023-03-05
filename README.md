@@ -9,6 +9,11 @@ Similar to [json-server](https://github.com/typicode/json-server) but backed by 
 ## Features
 
 - Persisted by sqlite3
+- RESTful API
+- CRUD table objects
+- CRUD key-value pairs
+- File Upload
+- executable cli
 
 ## APIs
 
