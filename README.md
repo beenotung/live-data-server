@@ -15,6 +15,12 @@ Similar to [json-server](https://github.com/typicode/json-server) but backed by 
 - File Upload
 - executable cli
 
+## Usage
+
+```bash
+npx live-data-server
+```
+
 ## APIs
 
 ### Files API
