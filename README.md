@@ -2,6 +2,8 @@
 
 Similar to [json-server](https://github.com/typicode/json-server) but backed by sqlite3
 
+[![npm Package Version](https://img.shields.io/npm/v/live-data-server)](https://www.npmjs.com/package/live-data-server)
+
 ## Features
 
 - Persisted by sqlite3
