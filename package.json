@@ -24,6 +24,7 @@
   },
   "license": "BSD-2-Clause",
   "bin": {
+    "live-data-server": "cli.js",
     "data-server": "cli.js"
   },
   "files": [
