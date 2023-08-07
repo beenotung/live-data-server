@@ -8,17 +8,30 @@ Similar to [json-server](https://github.com/typicode/json-server) but backed by 
 
 ## Features
 
-- Persisted by sqlite3
+- No need to install (npx executable)
 - RESTful API
+- Persisted by sqlite3
 - CRUD table objects
 - CRUD key-value pairs
 - File Upload
-- executable cli
+- Search by any field
+- Search with range / logics (TODO)
 
 ## Usage
 
 ```bash
-npx live-data-server
+npx live-data-server [port]
+```
+
+The port number can be set with `PORT` environment variable as well, otherwise it will use any available port.
+
+Usage Example:
+
+```bash
+> npx live-data-server 8600
+listening on http://localhost:8600
+listening on http://127.0.0.1:8600 (lo)
+listening on http://192.168.80.105:8600 (wlp3s0)
 ```
 
 ## APIs
@@ -31,13 +44,28 @@ npx live-data-server
 
 ### Collection API
 
-| Method | Path                   | Description  |
-| ------ | ---------------------- | ------------ |
-| GET    | /collection/:table     | get all      |
-| GET    | /collection/:table/:id | get by id    |
-| POST   | /collection/:table     | create       |
-| PATCH  | /collection/:table/:id | update by id |
-| DELETE | /collection/:table/:id | delete by id |
+| Method | Path                   | Description        |
+| ------ | ---------------------- | ------------------ |
+| GET    | /collection/:table     | get all / search\* |
+| GET    | /collection/:table/:id | get by id          |
+| POST   | /collection/:table     | create             |
+| PATCH  | /collection/:table/:id | update by id       |
+| DELETE | /collection/:table/:id | delete by id       |
+
+Supported Search Example:
+
+```
+GET /collection/user?role=admin&status=active
+```
+
+To-be Supported Search Example:
+
+```
+GET /collection/house?rent=below(5000)&area=at_least(200)
+GET /collection/product?price=between(10,20)
+GET /collection/user?role=not(admin)
+GET /collection/user?role=any(shop,client)
+```
 
 ### Dictionary (key-value) API
 
